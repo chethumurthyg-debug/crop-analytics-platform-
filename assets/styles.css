@@ -1,0 +1,318 @@
+/* ==========================================
+   GLOBAL SETTINGS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==========================================
+   MAIN BACKGROUND
+========================================== */
+
+.stApp {
+    background: #f4f7fc;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.main-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1b4332;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   KPI CARDS
+========================================== */
+
+.metric-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.15);
+}
+
+.metric-title {
+    font-size: 14px;
+    color: gray;
+}
+
+.metric-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2d6a4f;
+}
+
+/* ==========================================
+   ANALYTICS CARDS
+========================================== */
+
+.analytics-card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+}
+
+.analytics-card h3 {
+    color: #1d3557;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #1b4332 0%,
+        #2d6a4f 100%
+    );
+}
+
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+section[data-testid="stSidebar"] .stRadio label {
+    color: white !important;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.stButton > button {
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        #2d6a4f,
+        #40916c
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(
+        90deg,
+        #40916c,
+        #52b788
+    );
+
+    transform: scale(1.03);
+}
+
+/* ==========================================
+   SUCCESS ALERT
+========================================== */
+
+.stSuccess {
+    border-radius: 12px;
+    border-left: 5px solid #2d6a4f;
+}
+
+/* ==========================================
+   INFO ALERT
+========================================== */
+
+.stInfo {
+    border-radius: 12px;
+}
+
+/* ==========================================
+   DATAFRAME
+========================================== */
+
+[data-testid="stDataFrame"] {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* ==========================================
+   TABS
+========================================== */
+
+.stTabs [role="tab"] {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+/* ==========================================
+   INPUT BOXES
+========================================== */
+
+.stNumberInput,
+.stTextInput,
+.stSelectbox {
+    border-radius: 12px;
+}
+
+/* ==========================================
+   PREDICTION CARD
+========================================== */
+
+.prediction-card {
+    background: linear-gradient(
+        135deg,
+        #2d6a4f,
+        #40916c
+    );
+
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.prediction-card h2 {
+    color: white;
+}
+
+.prediction-card p {
+    font-size: 18px;
+}
+
+/* ==========================================
+   INSIGHT CARD
+========================================== */
+
+.insight-card {
+    background: #ffffff;
+    border-left: 5px solid #2d6a4f;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ==========================================
+   CHART CONTAINER
+========================================== */
+
+.chart-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2d6a4f;
+    border-radius: 10px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    color: gray;
+    font-size: 14px;
+}
+
+/* ==========================================
+   GLASSMORPHISM PANEL
+========================================== */
+
+.glass-card {
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.metric-card,
+.analytics-card,
+.chart-card,
+.insight-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media only screen and (max-width: 768px) {
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .metric-value {
+        font-size: 24px;
+    }
+
+    .metric-card {
+        padding: 15px;
+    }
+}
